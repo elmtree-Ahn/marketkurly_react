@@ -35,7 +35,7 @@ a {
 .bnr_header {
   position: relative;
   min-width: 1050px;
-  background-color: orange;
+  background-color: var(--color-purple-dark);
   line-height: 42px;
   font-size: 16px;
   text-align: cneter;
