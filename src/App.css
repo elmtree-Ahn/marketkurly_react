@@ -16,6 +16,7 @@
 
 /* common */
 body {
+  box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
   list-style: none;
 }
@@ -31,13 +32,18 @@ a {
   margin: 0 auto;
 }
 
+.makeCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* 헤더배너  */
 .bnr_header {
   position: relative;
   min-width: 1050px;
   background-color: var(--color-purple-dark);
   line-height: 42px;
-  font-size: 16px;
   text-align: cneter;
 }
 
@@ -45,9 +51,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: -1px;
+  letter-spacing: -0.6px;
   color: white;
 }
 
@@ -56,17 +62,73 @@ a {
 }
 
 .bnr_header a img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .bnr_header .closeBtn {
   position: absolute;
-  top: -1px;
-  right: -80px;
+  top: 0;
+  right: -15px;
 }
 
 .bnr_header .closeBtn img {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
+}
+
+/* userMenu */
+.userMenu {
+  margin-top: 4px;
+}
+
+.userMenu .bnr_delivery img {
+  width: 121px;
+  height: 22px;
+}
+
+.userMenu .list_menu .menu {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  line-height: 25px;
+}
+
+.userMenu .list_menu .menu::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  margin: 8px 12px;
+  background-color: #d8d8d8;
+}
+
+.userMenu .list_menu .menu:last-child:after {
+  display: none;
+}
+
+.userMenu .list_menu .menu .join {
+  font-weight: 400;
+  color: var(--color-purple-dark);
+}
+
+.userMenu .list_menu .menu .menu_list img {
+  margin-left: 4px;
+  margin-bottom: 2px;
+  width: 8px;
+  height: 5px;
+}
+
+/* 로고 */
+
+.headerLogo .inner {
+  display: flex;
+  justify-content: center;
+}
+
+.headerLogo .logoImg {
+  position: relative;
+  top: -25px;
+  width: 103px;
+  height: 79px;
 }

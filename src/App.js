@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -7,6 +6,8 @@ function App() {
     <>
       {/* font */}
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+      {/* fontawesome */}
+      <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
       <Header />
     </>
   );
@@ -40,9 +41,11 @@ function Header() {
         }
         {/* userMenu */}
         <div className="userMenu">
-          <div className="inner">
-            <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="샛별 택배 배송안내" />
-            <ul className="list_menu">
+          <div className="inner makeCenter">
+            <a href="javascript:void(0)" className="bnr_delivery">
+              <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="샛별 택배 배송안내" />
+            </a>
+            <ul className="list_menu makeCenter">
               <li className="menu">
                 <a href="javascript:void(0)" className="link_menu join">
                   회원가입
@@ -55,13 +58,61 @@ function Header() {
               </li>
               <li className="menu">
                 <a href="javascript:void(0)" className="link_menu menu_list">
-                  고객신터
-                  <img src="" alt="" />
+                  고객센터
+                  <img src="	https://res.kurly.com/pc/ico/1908/ico_down_16x10.png" alt="more" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
+      
+        {/* logo */}
+        <div className="headerLogo">
+          <div className="inner">
+            <h1 className="logo">
+              <a href="javascript:avoid(0)">
+                <img className="logoImg" src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리로고" />
+              </a>
+            </h1>
+          </div>
+        </div>
+      
+        {/* headerMenu */}
+        <div className="headerMenu">
+          <div className="inner">
+            <ul className="menu_list">
+              <li className="menu menu1">
+                <a href="javascrip:void(0)">
+                  <img src="https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png" alt="햄버거" />
+                  전체 카테고리
+                </a>
+              </li>
+              <li className="menu menu2">
+                <a href="javascrip:void(0)">
+                  신상품
+                </a>
+              </li>
+              <li className="menu menu3">
+                <a href="javascrip:void(0)">
+                  베스트
+                </a>
+              </li>
+              <li className="menu menu4">
+                <a href="javascrip:void(0)">
+                  알뜰쇼핑
+                </a>
+              </li>
+              <li className="menu menu5">
+                <a href="javascrip:void(0)">
+                  특가/혜택
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      
+      
       </header>
     </>
   )
