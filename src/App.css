@@ -15,10 +15,14 @@
 }
 
 /* common */
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   font-family: "Noto Sans KR", sans-serif;
   list-style: none;
+  color: var(--color-black-dark);
 }
 
 a {
@@ -120,7 +124,6 @@ a {
 }
 
 /* 로고 */
-
 .headerLogo .inner {
   display: flex;
   justify-content: center;
@@ -128,7 +131,105 @@ a {
 
 .headerLogo .logoImg {
   position: relative;
-  top: -25px;
+  top: -15px;
   width: 103px;
   height: 79px;
+}
+
+/* headerMenu */
+.headerMenu .inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5px;
+}
+
+.headerMenu .menu_list {
+  display: flex;
+  align-items: center;
+}
+
+.headerMenu .menu_list .menu {
+  font-size: 16px;
+  color: var(--color-black-dark);
+}
+
+.headerMenu .menu_list .menu:hover a {
+  color: var(--color-purple-dark);
+  text-decoration: underline solid var(--color-purple-dark);
+  text-underline-position: under;
+}
+
+.headerMenu .menu_list .menu1 {
+  width: 168px;
+}
+
+.headerMenu .menu_list .menu2 {
+  width: 124px;
+}
+
+.headerMenu .menu_list .menu3 {
+  width: 116px;
+}
+
+.headerMenu .menu_list .menu4 {
+  width: 124px;
+}
+
+.headerMenu .menu_list .menu5 {
+  width: 116px;
+}
+
+.headerMenu .menu_list .menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+}
+
+.headerMenu .menu_list .menu1 a {
+  justify-content: left;
+}
+
+.headerMenu .menu_list .menu a img {
+  width: 16px;
+  height: 14px;
+  margin: 5px 14px 0 0;
+}
+
+/* seargh */
+.headerMenu .search {
+  position: relative;
+}
+
+.headerMenu .search input {
+  width: 242px;
+  height: 36px;
+  padding: 0 60px 0 14px;
+  border: 1px solid #f7f7f6;
+  border-radius: 18px;
+  background-color: #f7f7f7;
+  font-size: 12px;
+  color: #888;
+  letter-spacing: -0.6px;
+  line-height: 16px;
+  outline: none;
+}
+
+.headerMenu .search input::placeholder {
+  color: #888;
+}
+
+.headerMenu .search input:focus {
+  background-color: white;
+}
+
+.headerMenu .search img {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
 }
