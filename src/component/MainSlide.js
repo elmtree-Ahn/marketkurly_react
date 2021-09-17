@@ -9,7 +9,7 @@ export default function MainSlide() {
     infinite: true,  // 무한으로 반복
     speed: 700,
     autoplay: true,
-    autoplaySpeed: 3000,  // 넘어가는 속도
+    autoplaySpeed: 2500,  // 넘어가는 속도
     slidesToShow: 1,  // 4장씩 보이게
     slidesToScroll: 1,  // 1장씩 뒤로 넘어가게
     // centerMode: true,

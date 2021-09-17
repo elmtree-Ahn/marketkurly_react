@@ -4,7 +4,7 @@ export default function Item(props) {
     <div>
       <li className="item">
         <a href="javascript:void(0)" className="imgBox">
-          <img src="url({props.imgUrl})" alt="" />
+          <img src={props.imgUrl} alt="" />
         </a>
         <div className="infoBox">
           <a href="javascript:void(0)" className="itemName">
@@ -12,14 +12,14 @@ export default function Item(props) {
           </a>
           <div className="salePrice">
             <div className="sale">
-              {props.sale}
+              {props.sale}%
             </div>
             <div className="price">
-              {props.price}
+              {props.price}원
             </div>
           </div>
           <div className="marketPrice">
-            {props.marketPrice}
+            {props.marketPrice}원
           </div>
         </div>
       </li>

@@ -42,6 +42,10 @@ a {
   align-items: center;
 }
 
+header {
+  position: relative;
+}
+
 /* 헤더배너  */
 .bnr_header {
   position: relative;
@@ -138,7 +142,10 @@ a {
 
 /* headerMenu */
 .headerMenu {
+  position: sticky;
+  top: 100px;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
 .headerMenu .inner {
@@ -257,6 +264,7 @@ a {
   background-position: 50% 50%;
   background-size: auto auto;
   overflow: hidden;
+  cursor: pointer;
 }
 
 /* productList */
@@ -269,15 +277,75 @@ a {
   font-weight: 600;
 }
 
+.productList .itemList {
+  position: relative;
+}
+
+/* slideBtn */
+.productList .slick-prev,
+.productList .slick-next {
+  position: absolute;
+  top: 170px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  z-index: 999;
+}
+
+.productList .slick-prev {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+}
+
+.productList .slick-prev:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
+
+.productList .slick-next {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+}
+
+.productList .slick-next:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
+
+/* 초기설정 변경 */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  display: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  display: block;
+}
+
 /* Item */
 .item {
   height: 506px;
 }
 
+.item .imgBox {
+  display: block;
+  width: 249px;
+  height: 320px;
+  overflow: hidden;
+}
+
 .item .imgBox img {
   width: 249px;
   height: 320px;
-  letter-spacing: -0.2px;
+  transition-duration: 0.5s;
+}
+
+.item .imgBox img:hover {
+  transform: scale(1.025);
 }
 
 .item .infoBox .itemName {

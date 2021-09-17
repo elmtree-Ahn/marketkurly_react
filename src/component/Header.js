@@ -110,10 +110,6 @@ export default function Header() {
                 <img className="menuIcons" src="https://res.kurly.com/pc/service/common/2011/ico_cart.svg" alt="cart" />
               </a>
             </div>
-
-
-
-
           </div>
         </div>
       
