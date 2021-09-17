@@ -5,6 +5,7 @@ import MainSlide from './component/MainSlide';
 import ProductList from './component/ProductList';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MainSpecial from './component/MainSpecial';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
       <Header />
       <MainSlide />
-      <ProductList />
+      <ProductList productTitle="이 상품 어때요?" bgColor="white"/>
+      <MainSpecial />
       
     </>
   );

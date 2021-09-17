@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Item from './Item';
 
-export default function ProductList() {
+export default function ProductList(props) {
   const settings = {
     dots: false,  // 슬라이드 밑에 점 보이게
     infinite: false,  // 무한으로 반복
@@ -19,10 +19,10 @@ export default function ProductList() {
 
   return(
     <>
-      <div className="productList" style={{backgroundColor:"white"}}>
+      <div className="productList" style={{backgroundColor:props.bgColor}}>
         <div className="inner">
           <h3 className="title">
-            이 상품 어때요?
+            {props.productTitle}
           </h3>
           <Slider {...settings} className="itemList">
               <Item imgUrl="https://img-cf.kurly.com/shop/data/goods/1567563159964l0.jpg" name="[유기방아] 떡볶이떡 & 떡국떡 (냉동)" slae="10" price="3,870" marketPrice="4,300" />
