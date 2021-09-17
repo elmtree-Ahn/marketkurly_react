@@ -241,7 +241,71 @@ a {
 }
 
 /* MainSlide */
-.mainslide img {
-  width: 100%;
+.mainSlide {
+  width: 1440x;
+  overflow: hidden;
+}
+.mainSlide .slideList {
+  width: 1440px;
+}
+
+.mainSlide .slideList .slide {
+  display: block;
+  width: 1440px;
   height: 370px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto auto;
+  overflow: hidden;
+}
+
+/* productList */
+.productList .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0 35px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Item */
+.item {
+  height: 506px;
+}
+
+.item .imgBox img {
+  width: 249px;
+  height: 320px;
+  letter-spacing: -0.2px;
+}
+
+.item .infoBox .itemName {
+  display: block;
+  max-height: 50px;
+  margin-top: 12px;
+  color: var(--color-black-dark);
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item .infoBox .salePrice {
+  display: flex;
+  padding-top: 9px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item .infoBox .sale {
+  padding-right: 8px;
+  color: var(--color-red-bright);
+}
+
+.item .infoBox .marketPrice {
+  padding-top: 8px;
+  font-size: 14px;
+  color: var(--color-gray-dark);
+  text-decoration: line-through;
 }

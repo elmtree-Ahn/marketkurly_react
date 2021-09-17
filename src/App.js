@@ -2,7 +2,9 @@ import './App.css';
 import { useState } from 'react';
 import Header from './component/Header';
 import MainSlide from './component/MainSlide';
-import ItemList from './component/ItemList';
+import ProductList from './component/ProductList';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
       <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
       <Header />
       <MainSlide />
-      <ItemList />
+      <ProductList />
       
     </>
   );
