@@ -389,13 +389,17 @@ header {
   padding: 11px 0 7px 10px;
 }
 
+.mainSpecial .goodsTitle .title {
+  height: 173px;
+}
+
 .mainSpecial .goodsTitle .title .name {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .mainSpecial .goodsTitle .title .name__desc {
-  padding-top: 10px;
+  padding-top: 18px;
   font-size: 16px;
   color: var(--color-gray-dark);
   line-height: 24px;
@@ -409,6 +413,23 @@ header {
   margin: 7px 0 16px 2px;
   background-color: #999;
   word-break: break-all;
+}
+
+.mainSpecial .goodsTitle .coment {
+  padding: 0 0 10px 22px;
+  background: url(https://res.kurly.com/pc/service/main/2010/ico_hook.svg)
+    no-repeat 0 2px;
+  background-size: 18px 18px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+
+.mainSpecial .goodsList .list {
+  display: flex;
+  justify-content: space-between;
+  width: 694px;
 }
 
 /* BasicItem */
@@ -571,6 +592,18 @@ header {
   font-weight: 600;
   color: white;
   opacity: 1;
+}
+
+.special_item .imgBox .bgSticker {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 8px 12px;
+  background-color: var(--color-purple-bright);
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
 }
 
 .special_item .infoBox {
