@@ -249,16 +249,16 @@ header {
 
 /* MainSlide */
 .mainSlide {
-  width: 1440x;
+  width: 100vw;
   overflow: hidden;
 }
 .mainSlide .slideList {
-  width: 1440px;
+  width: 100vw;
 }
 
 .mainSlide .slideList .slide {
   display: block;
-  width: 1440px;
+  width: 100vw;
   height: 370px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
