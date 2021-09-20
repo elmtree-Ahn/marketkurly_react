@@ -274,7 +274,7 @@ header {
   align-items: center;
   padding: 79px 0 35px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 00;
 }
 
 .productList .itemList {
@@ -643,4 +643,70 @@ header {
   font-weight: 500;
   color: var(--color-gray-dark);
   text-decoration: line-through;
+}
+
+/* MainEvetn */
+.mainEvent .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.mainEvent .itemWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* EventItem */
+/* Item */
+.eventItem {
+  height: 506px;
+}
+
+.eventItem .imgBox {
+  display: block;
+  width: 338px;
+  height: 338px;
+  overflow: hidden;
+}
+
+.eventItem .imgBox img {
+  width: 338px;
+  height: 338px;
+  transition-duration: 0.5s;
+}
+
+.eventItem .imgBox img:hover {
+  transform: scale(1.025);
+}
+
+.eventItem .infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.eventItem .infoBox .itemName {
+  display: block;
+  max-width: 338px;
+  max-height: 54px;
+  color: var(--color-black-dark);
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.eventItem .infoBox .itemDesc {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray-dark);
 }

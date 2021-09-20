@@ -6,6 +6,7 @@ import ProductList from './component/ProductList';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MainSpecial from './component/MainSpecial';
+import MainEvent from './component/MainEvent';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <MainSlide />
       <ProductList productTitle="이 상품 어때요?" bgColor="white"/>
       <MainSpecial />
-      
+      <MainEvent />
     </>
   );
 }
