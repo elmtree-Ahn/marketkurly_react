@@ -710,3 +710,69 @@ header {
   font-weight: 500;
   color: var(--color-gray-dark);
 }
+
+/* footer */
+footer {
+  padding-bottom: 60px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .inner .footer_cc .title {
+  padding: 29px 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+footer .inner .footer_cc ul li {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+footer .inner .footer_cc ul li:first-child {
+  padding-top: 0;
+}
+
+footer .inner .footer_cc ul li .number {
+  width: 140px;
+  height: 40px;
+  margin-right: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+
+footer .inner .footer_cc ul li .inquiryBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  margin-right: 16px;
+  padding-bottom: 3px;
+  border: 1px solid var(--color-gray-bright);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+footer .inner .footer_cc ul li .desc span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+}
+
+footer .inner .footer_cc ul li .desc .detail {
+  color: var(--color-gray-dark);
+}
