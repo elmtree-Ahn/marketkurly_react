@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import MainSpecial from './component/MainSpecial';
 import MainEvent from './component/MainEvent';
 import Footer from './component/Footer';
+import Banner from './component/Banner';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <ProductList productTitle="이 상품 어때요?" bgColor="white"/>
       <MainSpecial />
       <MainEvent />
+      <Banner imgUrl="https://img-cf.kurly.com/shop/data/main/7/pc_img_1629448784.jpg"/>
       <Footer />
     </>
   );

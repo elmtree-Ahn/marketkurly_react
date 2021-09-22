@@ -17,3 +17,8 @@ export default function EvnetItem(props) {
     </>
   )
 }
+
+EvnetItem.defaultProps = {
+  name: '이름을 입력하세요',
+  desc: '설명을 쓰세요.'
+}

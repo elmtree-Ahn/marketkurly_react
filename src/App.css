@@ -872,3 +872,19 @@ footer .link .link_box .txt {
   line-height: 16px;
   letter-spacing: -0.5px;
 }
+
+/* Banner */
+.bnr__main {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.bnr__main .link {
+  display: block;
+  min-height: 140px;
+  background-color: #eee;
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+
+}
