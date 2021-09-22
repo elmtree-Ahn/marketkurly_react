@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MainSpecial from './component/MainSpecial';
 import MainEvent from './component/MainEvent';
-import Banner from './component/Banner';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <ProductList productTitle="이 상품 어때요?" bgColor="white"/>
       <MainSpecial />
       <MainEvent />
-      <Banner />
+      <Footer />
     </>
   );
 }
