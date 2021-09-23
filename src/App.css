@@ -270,6 +270,7 @@ header {
 /* productList */
 .productList .title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 79px 0 35px;
@@ -280,6 +281,15 @@ header {
 .productList .title .icon {
   margin-left: 10px;
   font-weight: 300;
+}
+
+.productList .desc {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+  line-height: 20px;
+  text-align: center;
 }
 
 .productList .itemList {

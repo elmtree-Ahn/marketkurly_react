@@ -24,14 +24,20 @@ const icon = 'true';
       <div className="productList" style={{backgroundColor:props.bgColor}}>
         <div className="inner">
           <h3 className="title">
-            {props.productTitle}
-            {
-              icon === `${props.icon}`
-              ? (<FontAwesomeIcon className="icon" icon={faChevronRight} />)
-              : null
-            }
+            <span>
+              {props.productTitle}
+              {
+                icon === `${props.icon}`
+                ? (<FontAwesomeIcon className="icon" icon={faChevronRight} />)
+                : null
+              }
+            </span>
+            <div className="desc">
+            {props.desc}
+            </div>
             
           </h3>
+
           <Slider {...settings} className="itemList">
               <Item imgUrl="https://img-cf.kurly.com/shop/data/goods/1567563159964l0.jpg" name="[유기방아] 떡볶이떡 & 떡국떡 (냉동)" sale="10" price="3,870" marketPrice="4,300" />
               <Item imgUrl="https://img-cf.kurly.com/shop/data/goods/1590727808213l0.jpg" name="[풀무원] 생면식감 꽃게탕면" sale="21" price="4,305" marketPrice="8,600" />
