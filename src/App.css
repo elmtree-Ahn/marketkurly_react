@@ -274,7 +274,12 @@ header {
   align-items: center;
   padding: 79px 0 35px;
   font-size: 28px;
-  font-weight: 00;
+  font-weight: 500;
+}
+
+.productList .title .icon {
+  margin-left: 10px;
+  font-weight: 300;
 }
 
 .productList .itemList {
@@ -886,5 +891,95 @@ footer .link .link_box .txt {
   background-position: 50% 50%;
   background-size: cover;
   cursor: pointer;
+}
 
+/* categoryType */
+.categoryType {
+  padding-bottom: 100px;
+}
+
+.categoryType .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.categoryType .categoryMenu .listCategory {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categoryType .categoryMenu .listCategory .menu {
+  display: inline-block;
+  padding: 0 5px 20px;
+}
+
+.categoryType .categoryMenu .listCategory .menu a {
+  display: inline-block;
+  height: 40px;
+  padding: 9px 22px 0px;
+  /* border: 1px solid #f7f7f7; */
+  border-radius: 20px;
+  /* border-color: #f7f7f7; */
+  background-color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.categoryType .categoryMenu .listCategory .first a {
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-purple-dark);
+}
+
+.categoryType .itemList {
+  position: relative;
+}
+
+.categoryType .moreBtn {
+  display: block;
+  width: 516px;
+  height: 56px;
+  padding-top: 16px;
+  margin: 0 auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+}
+
+/* slideBtn */
+.categoryType .slick-prev,
+.categoryType .slick-next {
+  position: absolute;
+  top: 170px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  z-index: 999;
+}
+
+.categoryType .slick-prev {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+}
+
+.categoryType .slick-prev:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
+
+.categoryType .slick-next {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+}
+
+.categoryType .slick-next:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+  background-size: 60px 60px;
 }

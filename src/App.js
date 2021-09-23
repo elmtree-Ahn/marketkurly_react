@@ -9,6 +9,7 @@ import MainSpecial from './component/MainSpecial';
 import MainEvent from './component/MainEvent';
 import Footer from './component/Footer';
 import Banner from './component/Banner';
+import CategoryType from './component/CategoryType';
 
 
 function App() {
@@ -20,10 +21,12 @@ function App() {
       <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
       <Header />
       <MainSlide />
-      <ProductList productTitle="이 상품 어때요?" bgColor="white"/>
+      <ProductList productTitle="이 상품 어때요?" bgColor="white" />
       <MainSpecial />
-      <MainEvent />
-      <Banner imgUrl="https://img-cf.kurly.com/shop/data/main/7/pc_img_1629448784.jpg"/>
+      <MainEvent /> 
+      <ProductList productTitle="놓치면 후회할 가격" bgColor="white" icon='true' />
+      <Banner imgUrl="https://img-cf.kurly.com/shop/data/main/5/pc_img_1631862366.jpg"/>
+      <CategoryType />
       <Footer />
     </>
   );

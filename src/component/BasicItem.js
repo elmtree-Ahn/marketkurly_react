@@ -12,7 +12,7 @@ export default function BasicItem() {
       </a>
       <div className="infoBox">
         <a href="javascript:void(0)" className="itemName">
-          [GNC] 랄랄라zzzzzzzzzㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+          [GNC] 제목을 입력하시오
         </a>
         <div className="salePrice">
           <div className="sale">

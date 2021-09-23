@@ -2,6 +2,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Item from './Item';
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ProductList(props) {
   const settings = {
@@ -13,9 +15,9 @@ export default function ProductList(props) {
     slidesToScroll: 4,  // 1장씩 뒤로 넘어가게
     initialSlide: 0,
     centerPadding: '20px',  // 0px 하면 슬라이드 끝쪽 이미지가 안잘림
-    
-
   };
+
+const icon = 'true';
 
   return(
     <>
@@ -23,6 +25,12 @@ export default function ProductList(props) {
         <div className="inner">
           <h3 className="title">
             {props.productTitle}
+            {
+              icon === `${props.icon}`
+              ? (<FontAwesomeIcon className="icon" icon={faChevronRight} />)
+              : null
+            }
+            
           </h3>
           <Slider {...settings} className="itemList">
               <Item imgUrl="https://img-cf.kurly.com/shop/data/goods/1567563159964l0.jpg" name="[유기방아] 떡볶이떡 & 떡국떡 (냉동)" sale="10" price="3,870" marketPrice="4,300" />
