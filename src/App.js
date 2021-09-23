@@ -10,6 +10,7 @@ import MainEvent from './component/MainEvent';
 import Footer from './component/Footer';
 import Banner from './component/Banner';
 import CategoryType from './component/CategoryType';
+import MainRecipe from './component/MainRecipe';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       <ProductList productTitle="마감세일" bgColor="white" icon='true'/>
       <ProductList productTitle="365일 최저가 도전" bgColor="rgb(247, 247, 247)" icon='true' desc="최저가 도전, 365일 언제나 알뜰하게"/>
       <ProductList productTitle="식단관리" bgColor="white" icon='true' desc="실패 없는 식단 관리의 비결"/>
-      
+      <MainRecipe productTitle="컬리의 레시피" bgColor="white" icon='true'/>
       <Footer />
     </>
   );

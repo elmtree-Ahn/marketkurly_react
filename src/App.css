@@ -993,3 +993,98 @@ footer .link .link_box .txt {
   background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
   background-size: 60px 60px;
 }
+
+/* RecipiItem */
+.RecipiItem {
+  height: 303px;
+}
+
+.RecipiItem .imgBox {
+  display: block;
+  width: 338px;
+  height: 225px;
+  overflow: hidden;
+}
+
+.RecipiItem .imgBox img {
+  width: 338px;
+  height: 225px;
+  transition-duration: 0.5s;
+}
+
+.RecipiItem .imgBox img:hover {
+  transform: scale(1.025);
+}
+
+.RecipiItem .infoBox {
+  width: 338px;
+}
+
+.RecipiItem .infoBox .itemName {
+  display: block;
+  margin-top: 12px;
+  color: var(--color-black-dark);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* MainRecipe */
+.MainRecipe .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.MainRecipe .title .icon {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.MainRecipe .desc {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+  line-height: 20px;
+  text-align: center;
+}
+
+.MainRecipe .itemList {
+  position: relative;
+}
+
+/* slideBtn */
+.MainRecipe .slick-prev,
+.MainRecipe .slick-next {
+  position: absolute;
+  top: 120px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  z-index: 999;
+}
+
+.MainRecipe .slick-prev {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+}
+
+.MainRecipe .slick-prev:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
+
+.MainRecipe .slick-next {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+}
+
+.MainRecipe .slick-next:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
