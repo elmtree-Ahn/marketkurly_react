@@ -1088,3 +1088,100 @@ footer .link .link_box .txt {
   background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
   background-size: 60px 60px;
 }
+
+/* RecipiItem */
+.instaItem {
+  height: 175px;
+}
+
+.instaItem .imgBox {
+  display: block;
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.instaItem .imgBox img {
+  width: 175px;
+  height: 175px;
+  transition-duration: 0.5s;
+}
+
+.instaItem .infoBox {
+  width: 338px;
+}
+
+.instaItem .infoBox .itemName {
+  display: block;
+  margin-top: 12px;
+  color: var(--color-black-dark);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* MainRecipe */
+.instaRegram .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.instaRegram .itemList {
+  position: relative;
+}
+
+.instaRegram .textBox {
+  margin: 0 auto;
+  padding: 39px 0 100px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray-dark);
+  line-height: 29px;
+  text-align: center;
+}
+
+.instaRegram .textBox .more {
+  display: block;
+}
+
+.instaRegram .textBox .instaLink {
+  display: block;
+  color: var(--color-black-dark);
+  cursor: pointer;
+}
+
+/* slideBtn */
+.instaRegram .slick-prev,
+.instaRegram .slick-next {
+  position: absolute;
+  top: 90px;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  z-index: 999;
+}
+
+.instaRegram .slick-prev {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+}
+
+.instaRegram .slick-prev:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_prev_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
+
+.instaRegram .slick-next {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+}
+
+.instaRegram .slick-next:hover {
+  background-image: url("https://res.kurly.com/pc/service/main/1908/btn_next_default_x2.png?v=1");
+  background-size: 60px 60px;
+}
