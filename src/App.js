@@ -21,6 +21,7 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
       {/* fontawesome */}
       <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
+
       <Header />
       <MainSlide />
       <ProductList productTitle="이 상품 어때요?" bgColor="white" />
@@ -37,7 +38,9 @@ function App() {
       <ProductList productTitle="식단관리" bgColor="white" icon='true' desc="실패 없는 식단 관리의 비결"/>
       <MainRecipe productTitle="컬리의 레시피" bgColor="white" icon='true'/>
       <InstaRegram />
+      <Banner imgUrl="	https://img-cf.kurly.com/shop/data/main/15/pc_img_1629447526.jpg"/>
       <Footer />
+
     </>
   );
 }
