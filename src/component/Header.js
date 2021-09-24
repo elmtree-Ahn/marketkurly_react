@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, Route, Switch } from 'react-router-dom';
 
 export default function Header() {
   let [onOffBtn, setOnOffBtn] = useState(true);
@@ -56,9 +57,12 @@ export default function Header() {
         <div className="headerLogo">
           <div className="inner">
             <h1 className="logo">
-              <a href="javascript:avoid(0)">
-                <img className="logoImg" src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리로고" />
-              </a>
+              <Link to="/">
+                <a href="javascript:avoid(0)">
+                  <img className="logoImg" src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리로고" />
+                </a>
+              </Link>
+
             </h1>
           </div>
         </div>

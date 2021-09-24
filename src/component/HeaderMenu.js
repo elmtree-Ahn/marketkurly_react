@@ -1,3 +1,5 @@
+import { Link, Route, Switch } from 'react-router-dom';
+
 export default function HeaderMenu(){
   return(
     <div className="headerMenu">
@@ -10,9 +12,11 @@ export default function HeaderMenu(){
             </a>
           </li>
           <li className="menu menu2">
-            <a href="javascrip:void(0)">
-              신상품
-            </a>
+            <Link to="/new_goods">
+              <a href="javascrip:void(0)">
+                신상품
+              </a>
+            </Link>
           </li>
           <li className="menu menu3">
             <a href="javascrip:void(0)">
