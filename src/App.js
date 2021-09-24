@@ -12,6 +12,7 @@ import Banner from './component/Banner';
 import CategoryType from './component/CategoryType';
 import MainRecipe from './component/MainRecipe';
 import InstaRegram from './component/InstaRegram';
+import HeaderMenu from './component/HeaderMenu';
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
       {/* fontawesome */}
       <script src="https://kit.fontawesome.com/e66717f547.js" crossorigin="anonymous"></script>
-
+      <div className="test"></div>
       <Header />
+      <HeaderMenu />
       <MainSlide />
       <ProductList productTitle="이 상품 어때요?" bgColor="white" />
       <MainSpecial />
