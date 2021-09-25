@@ -14,6 +14,7 @@ import CategoryType from './component/CategoryType';
 import MainRecipe from './component/MainRecipe';
 import InstaRegram from './component/InstaRegram';
 import HeaderMenu from './component/HeaderMenu';
+import NewGoods from './component/NewGoods';
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
 
       {/* 신상품 */}
       <Route path="/new_goods">
-        <div>상세 페이지 입니다. </div>
+        <NewGoods />
       </Route>
 
       <Footer />
