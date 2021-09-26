@@ -21,7 +21,7 @@ export default function NewGoods() {
             </div>
             <div className="categoryList">
               <li>
-                <a href="javascript:void(0)" onClick={changeColor}>
+                <a className="bold" href="javascript:void(0)" onClick={changeColor}>
                   추천순
                 </a>
               </li>

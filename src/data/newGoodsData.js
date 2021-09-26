@@ -30,16 +30,6 @@ let newGoodsData = [
     kurlyOnly : true
   },
   {
-    id : 2,
-    url : "https://img-cf.kurly.com/shop/data/goods/1631863525895l0.jpg",
-    title : "[KF365] 한돈 간장양념 돼지불고기 1kg (냉장)",
-    sale : 20,
-    price : "9,900",
-    marketPrice : '11,000',
-    coment : "100g 당 가격 : 990원",
-    kurlyOnly : true
-  },
-  {
     id : 3,
     url : "https://img-cf.kurly.com/shop/data/goods/1631496499667l0.jpg",
     title : "[마이비밀] 다이어트 도시락 6종",
@@ -89,7 +79,16 @@ let newGoodsData = [
     coment : "취향 따라 골라 먹는 알찬 한 끼",
     kurlyOnly : true
   },
-  
+  {
+    id : 8,
+    url : "https://img-cf.kurly.com/shop/data/goods/156748537289l0.jpg",
+    title : "[샐러드판다] 병 샐러드 11종",
+    sale : 7,
+    price : "5,487",
+    marketPrice : '5,900',
+    coment : "언제 어디서나 즐기는 고품격 샐러드",
+    kurlyOnly : true
+  },
 
 ]
 

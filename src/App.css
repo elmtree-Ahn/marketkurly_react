@@ -456,7 +456,7 @@ header {
 /* BasicItem */
 .basic_item {
   height: 682px;
-  padding: 25px 8px 0 0;
+  padding: 25px 0 0 0;
 }
 
 .basic_item .imgBox {
@@ -477,18 +477,6 @@ header {
   transform: scale(1.025);
 }
 
-.basic_item .imgBox .deadline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background-color: var(--color-purple-dark);
-  opacity: 0.6;
-}
-
 .basic_item .imgBox .deadline .time {
   margin-right: 5px;
   font-size: 20px;
@@ -505,7 +493,7 @@ header {
 }
 
 .basic_item .infoBox {
-  padding: 14px 10px 10px 0;
+  padding: 14px 0 10px 0;
 }
 
 .basic_item .infoBox .itemName {
@@ -1211,6 +1199,10 @@ footer .link .link_box .txt {
 
 .newGoods .list_ability .categoryList {
   display: flex;
+}
+
+.newGoods .list_ability .categoryList .bold {
+  color: var(--color-black-dark);
 }
 
 .newGoods .list_ability .categoryList li {

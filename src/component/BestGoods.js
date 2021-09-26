@@ -1,4 +1,4 @@
-import bestGoodsData from '../data/BestGoodsData';
+import bestGoodsData from '../data/bestGoodsData';
 import { useState } from 'react'
 import BasicItem from './BasicItem';
 
@@ -21,7 +21,7 @@ export default function BestGoods() {
             </div>
             <div className="categoryList">
               <li>
-                <a href="javascript:void(0)" onClick={changeColor}>
+                <a className="bold" href="javascript:void(0)" onClick={changeColor}>
                   추천순
                 </a>
               </li>
