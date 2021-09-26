@@ -15,6 +15,7 @@ import MainRecipe from './component/MainRecipe';
 import InstaRegram from './component/InstaRegram';
 import HeaderMenu from './component/HeaderMenu';
 import NewGoods from './component/NewGoods';
+import BestGoods from './component/BestGoods';
 
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
       {/* 신상품 */}
       <Route path="/new_goods">
         <NewGoods />
+      </Route>
+      <Route path="/best_goods">
+        <BestGoods />
       </Route>
 
       <Footer />

@@ -1,4 +1,4 @@
-let newGoodsData = [
+let bestGoodsData = [
   {
     id : 0,
     url : "https://img-cf.kurly.com/shop/data/goods/1632445842263l0.jpg",
@@ -93,4 +93,4 @@ let newGoodsData = [
 
 ]
 
-export default newGoodsData;
+export default bestGoodsData;

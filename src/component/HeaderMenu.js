@@ -19,9 +19,11 @@ export default function HeaderMenu(){
             </Link>
           </li>
           <li className="menu menu3">
-            <a href="javascrip:void(0)">
-              베스트
-            </a>
+            <Link to="/best_goods">
+              <a href="javascrip:void(0)">
+                베스트
+              </a>
+            </Link>
           </li>
           <li className="menu menu4">
             <a href="javascrip:void(0)">

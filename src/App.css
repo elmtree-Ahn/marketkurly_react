@@ -456,7 +456,7 @@ header {
 /* BasicItem */
 .basic_item {
   height: 682px;
-  padding: 25px 18px 0 0;
+  padding: 25px 8px 0 0;
 }
 
 .basic_item .imgBox {
@@ -1243,4 +1243,6 @@ footer .link .link_box .txt {
 .newGoods .itemWrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: var(--main-width);
 }
