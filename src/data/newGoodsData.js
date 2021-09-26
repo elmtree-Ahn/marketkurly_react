@@ -3,9 +3,9 @@ let newGoodsData = [
     id : 0,
     url : "https://img-cf.kurly.com/shop/data/goods/1632445842263l0.jpg",
     title : "[아임웰] 굿밸런스 라이트밀 솥밥 2종",
-    sale : null,
+    sale : 5,
     price : "2,600",
-    marketPrice : null,
+    marketPrice : '3.000',
     coment : "따끈하게 즐기는 담백한 한 끼",
     kurlyOnly : false
   },
@@ -23,12 +23,12 @@ let newGoodsData = [
     id : 2,
     url : "https://img-cf.kurly.com/shop/data/goods/1631863525895l0.jpg",
     title : "[KF365] 한돈 간장양념 돼지불고기 1kg (냉장)",
-    sale : null,
+    sale : 20,
     price : "9,900",
-    marketPrice : null,
+    marketPrice : '11,000',
     coment : "100g 당 가격 : 990원",
     kurlyOnly : true
-  }
+  },
 ]
 
 export default newGoodsData;

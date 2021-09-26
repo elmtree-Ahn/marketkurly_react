@@ -456,6 +456,7 @@ header {
 /* BasicItem */
 .basic_item {
   height: 682px;
+  padding: 25px 18px 0 0;
 }
 
 .basic_item .imgBox {
@@ -542,7 +543,7 @@ header {
 }
 
 .basic_item .infoBox .coment {
-  padding-top: 11px;
+  padding-top: 13px;
   font-size: 13px;
   font-weight: 500;
   color: var(--color-gray-dark);
@@ -1203,6 +1204,43 @@ footer .link .link_box .txt {
 }
 
 .newGoods .list_ability {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.newGoods .list_ability .categoryList {
+  display: flex;
+}
+
+.newGoods .list_ability .categoryList li {
+  position: relative;
+  margin-left: 14px;
+}
+
+.newGoods .list_ability .categoryList li a {
+  color: var(--color-gray-dark);
+}
+
+.newGoods .list_ability .categoryList li:hover a {
+  color: var(--color-black-dark);
+}
+
+.newGoods .list_ability .categoryList li:after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 3px;
+  width: 1px;
+  height: 10px;
+  background-color: #e5e5e5;
+}
+
+.newGoods .list_ability .categoryList li:last-child:after {
+  content: none;
+}
+
+.newGoods .itemWrap {
   display: flex;
   justify-content: space-between;
 }

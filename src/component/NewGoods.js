@@ -1,10 +1,13 @@
 import NewGoodsData from "../data/newGoodsData"
 import { useState } from 'react'
+import BasicItem from './BasicItem';
 
 export default function NewGoods() {
 
   let [data, setData] =  useState(NewGoodsData)
-
+  function changeColor() {
+    console.log('실행됨');
+  }
   return (
     <>
       <div className="newGoods">
@@ -18,7 +21,7 @@ export default function NewGoods() {
             </div>
             <div className="categoryList">
               <li>
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" onClick={changeColor}>
                   추천순
                 </a>
               </li>
@@ -49,6 +52,17 @@ export default function NewGoods() {
               </li>
             </div>
           </div>
+          <div className="itemWrap">
+            {
+              data.map((a, i) =>{
+                return (
+                <BasicItem url={data[i].url} title={data[i].title} sale={data[i].sale} price={data[i].price} marketPrice={data[i].marketPrice} coment={data[i].coment} kurlyOnly={data[i].kurlyOnly} key={data[i].id}/>
+                )
+              })
+            }
+          </div>
+          
+          
         </div>
       </div>
     </>
