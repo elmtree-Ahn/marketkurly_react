@@ -17,6 +17,7 @@ import HeaderMenu from './component/HeaderMenu';
 import NewGoods from './component/NewGoods';
 import BestGoods from './component/BestGoods';
 import Event from './component/Event';
+import Login from './component/Login';
 
 
 function App() {
@@ -60,7 +61,9 @@ function App() {
       <Route path="/event">
         <Event />
       </Route>
-
+      <Route path="/login">
+        <Login />
+      </Route>
       <Footer />
     </>
   );

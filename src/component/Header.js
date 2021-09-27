@@ -39,9 +39,11 @@ export default function Header() {
                 </a>
               </li>
               <li className="menu">
-                <a href="javascript:void(0)" className="link_menu login">
-                  로그인
-                </a>
+                <Link to="/login">
+                  <a href="javascript:void(0)" className="link_menu login">
+                    로그인
+                  </a>
+                </Link>
               </li>
               <li className="menu">
                 <a href="javascript:void(0)" className="link_menu menu_list">
