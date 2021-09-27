@@ -16,6 +16,7 @@ import InstaRegram from './component/InstaRegram';
 import HeaderMenu from './component/HeaderMenu';
 import NewGoods from './component/NewGoods';
 import BestGoods from './component/BestGoods';
+import Event from './component/Event';
 
 
 function App() {
@@ -55,6 +56,9 @@ function App() {
       </Route>
       <Route path="/best_goods">
         <BestGoods />
+      </Route>
+      <Route path="/event">
+        <Event />
       </Route>
 
       <Footer />

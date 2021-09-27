@@ -1238,3 +1238,18 @@ footer .link .link_box .txt {
   flex-wrap: wrap;
   width: var(--main-width);
 }
+
+/* EventBnr */
+.event {
+  
+}
+
+.eventBnr {
+  display: block;
+  height: 200px;
+  width: 1050px;
+  margin-bottom: 15px;
+  background-position: center;
+  /* background-image: url("https://img-cf.kurly.com/shop/data/event/e34869847134e12f6c2657dd4221490b.jpg"); */
+  cursor: pointer;
+}

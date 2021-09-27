@@ -31,9 +31,11 @@ export default function HeaderMenu(){
             </a>
           </li>
           <li className="menu menu5">
-            <a href="javascrip:void(0)">
-              특가/혜택
-            </a>
+            <Link to="/event">
+              <a href="javascrip:void(0)">
+                특가/혜택
+              </a>
+            </Link>
           </li>
         </ul>
         <div className="search">
