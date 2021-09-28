@@ -1339,3 +1339,25 @@ footer .link .link_box .txt {
   background-color: white;
   color: var(--color-purple-dark);
 }
+
+/* Detail */
+.detail {
+  margin-top: 20px;
+}
+
+.detail .itemView {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail .itemImg img {
+  height: 552px;
+  width: 430px;
+}
+
+.detail .infoDetail {
+  display: grid;
+  grid-template-columns: 150px 410px;
+  grid-template-rows: repeat(6, 70px);
+  align-items: flex-start;
+}
