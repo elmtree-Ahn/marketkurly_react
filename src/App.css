@@ -1355,6 +1355,28 @@ footer .link .link_box .txt {
   width: 430px;
 }
 
+.detail .nameBox {
+  margin-top: 12px;
+}
+
+.detail .name {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  width: 560px;
+}
+
+.detail .nameBox button {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
 .detail .infoDetail {
   display: grid;
   grid-template-columns: 150px 410px;

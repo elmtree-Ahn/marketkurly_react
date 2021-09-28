@@ -17,7 +17,7 @@ export default function Detail(props) {
                 <div className="name">
                   {props.data[id].title}
                 </div>
-                <button style={{backgroundImage: "https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns_x2.png"}}></button>
+                <button style={{backgroundImage: "url(https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns_x2.png)"}}></button>
               </div>
               <div className="coment">
                 {props.data[id].coment}
@@ -78,7 +78,7 @@ export default function Detail(props) {
                 <div className="item">
                   - 1 +
                 </div>
-                
+
               </div>
             </div>
             
