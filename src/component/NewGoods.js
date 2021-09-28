@@ -1,13 +1,17 @@
 import NewGoodsData from "../data/newGoodsData"
 import { useState } from 'react'
 import BasicItem from './BasicItem';
+import { Route } from 'react-router';
+import { useParams } from 'react-router';
 
 export default function NewGoods() {
 
-  let [data, setData] =  useState(NewGoodsData)
-  function changeColor() {
-    console.log('실행됨');
-  }
+  let [data, setData] =  useState(NewGoodsData);
+  let { id } = useParams();
+  let findItem = data.find(function(item){
+    return item.id == id
+  });
+
   return (
     <>
       <div className="newGoods">
@@ -21,7 +25,7 @@ export default function NewGoods() {
             </div>
             <div className="categoryList">
               <li>
-                <a className="bold" href="javascript:void(0)" onClick={changeColor}>
+                <a className="bold" href="javascript:void(0)" >
                   추천순
                 </a>
               </li>
@@ -56,7 +60,7 @@ export default function NewGoods() {
             {
               data.map((a, i) =>{
                 return (
-                <BasicItem url={data[i].url} title={data[i].title} sale={data[i].sale} price={data[i].price} marketPrice={data[i].marketPrice} coment={data[i].coment} kurlyOnly={data[i].kurlyOnly} key={data[i].id}/>
+                  <BasicItem url={data[i].url} title={data[i].title} sale={data[i].sale} price={data[i].price} marketPrice={data[i].marketPrice} coment={data[i].coment} kurlyOnly={data[i].kurlyOnly} key={data[i].id}/>
                 )
               })
             }

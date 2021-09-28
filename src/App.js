@@ -18,9 +18,11 @@ import NewGoods from './component/NewGoods';
 import BestGoods from './component/BestGoods';
 import Event from './component/Event';
 import Login from './component/Login';
-
+import Detail from './component/Detail';
 
 function App() {
+
+
   return (
     <>
       {/* font */}
@@ -55,15 +57,24 @@ function App() {
       <Route path="/new_goods">
         <NewGoods />
       </Route>
+      {/* 베스트 */}
       <Route path="/best_goods">
         <BestGoods />
       </Route>
+      {/* 특가/혜택 */}
       <Route path="/event">
         <Event />
       </Route>
+      {/* 로그인 */}
       <Route path="/login">
         <Login />
       </Route>
+      {/* 상세페이지 */}
+      <Route path="/detail/:id">
+        <Detail />
+      </Route>
+
+      {/* 푸터 */}
       <Footer />
     </>
   );
