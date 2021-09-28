@@ -19,9 +19,11 @@ import BestGoods from './component/BestGoods';
 import Event from './component/Event';
 import Login from './component/Login';
 import Detail from './component/Detail';
+import NewGoodsData from "./data/newGoodsData";
+
 
 function App() {
-
+  let [data, setData] =  useState(NewGoodsData);
 
   return (
     <>
@@ -69,11 +71,9 @@ function App() {
       <Route path="/login">
         <Login />
       </Route>
-      {/* 상세페이지 */}
       <Route path="/detail/:id">
-        <Detail />
+        <Detail data={data}/>
       </Route>
-
       {/* 푸터 */}
       <Footer />
     </>

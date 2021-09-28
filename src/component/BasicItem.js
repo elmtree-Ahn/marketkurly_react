@@ -1,10 +1,15 @@
+import { useParams } from 'react-router'
+import { Link } from 'react-router-dom'
+
 export default function BasicItem(props) {
   let kurly = props.kurlyOnly
+  let { id } = useParams()
+
   return (
     <li className="basic_item">
-      <a href="javascript:void(0)" className="imgBox">
+      <Link to={'/detail/' + props.adress} className="imgBox">
         <img src={props.url} alt="" />
-      </a>
+      </Link>
       <div className="infoBox">
         <a href="javascript:void(0)" className="itemName">
           {props.title}
