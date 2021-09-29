@@ -32,7 +32,7 @@ export default function Detail(props) {
     result = before + ',' + after;
   }
   else {
-    result = '0';
+    result = after;
   }
 
 
