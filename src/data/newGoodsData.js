@@ -5,7 +5,7 @@ let newGoodsData = [
     title : "[아임웰] 굿밸런스 라이트밀 솥밥 2종",
     sale : 5,
     price : "2,600",
-    marketPrice : '3.000',
+    marketPrice : '3,000',
     coment : "따끈하게 즐기는 담백한 한 끼",
     kurlyOnly : false
   },
