@@ -1,8 +1,18 @@
 import { useParams } from 'react-router'
+import { useState } from 'react';
 
 export default function Detail(props) {
 
   let { id } = useParams();
+  const [number, setNumber] = useState(0);
+
+  const onIncrease = () => {
+    setNumber(number + 1);
+  }
+
+  const onDecrease = () => {
+    setNumber(number - 1);
+  }
 
   return (
     <>
@@ -41,7 +51,6 @@ export default function Detail(props) {
                   {props.data[id].marketPrice}원
                 </div>
                 <img src="https://res.kurly.com/kurly/ico/2021/question_24_24_c999.svg" alt="물음표" className="ico" />
-
               </div>
               <span className="notLogin">
                 로그인 후 회원할인가와 적립혜택이 제공됩니다.
@@ -78,8 +87,16 @@ export default function Detail(props) {
                 <div className="item q item__5">
                   구매수량
                 </div>
-                <div className="item item__5">
-                  - 1 +
+                <div className="item item__5 some">
+                    <div className="wrap">
+                      <button className="minus" onClick={onDecrease}>-</button>
+                      <span>{number}</span>
+                      <button className="plus" onClick={onIncrease}>+</button>
+                    </div>
+                    
+
+                  
+                  
                 </div>
               </div>
               <div className="totalPrice">
@@ -90,12 +107,16 @@ export default function Detail(props) {
                 <span>원</span>
               </div>
               <div className="aboutPoint">
-                <div className="yelloBox">
+                <div className="yellowBox">
                   적립
                 </div>
                 <div className="desc">
                   로그인 후, 회원할인가와 적립혜택 제공
                 </div>
+              </div>
+              <div className="btnwrap">
+                <button className="alarm">재입고 알림</button>
+                <button className="inputCart">장바구니 담기</button>
               </div>
             </div>
             
