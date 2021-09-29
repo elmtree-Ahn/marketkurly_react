@@ -14,6 +14,29 @@ export default function Detail(props) {
     setNumber(number - 1);
   }
 
+  // 총 상품금액
+  const price = props.data[id].price;
+  let remove = ',';
+  let priceArr = price.split('');
+  priceArr = priceArr.filter((i) => {
+    return i !== remove;
+  })
+
+  let purePrice = parseInt(priceArr.join(''));
+  let totalPrice = purePrice * number;
+  totalPrice = String(totalPrice);
+  let before = totalPrice.slice(0,-3);
+  let after = totalPrice.slice(-3)
+  let result = '';
+  if (totalPrice > 1000) {
+    result = before + ',' + after;
+  }
+  else {
+    result = '0';
+  }
+
+
+
   return (
     <>
       <div className="detail">
@@ -90,7 +113,14 @@ export default function Detail(props) {
                 <div className="item item__5 some">
                     <div className="wrap">
                       <button className="minus" onClick={onDecrease}>-</button>
-                      <span>{number}</span>
+                      <span>
+                        {
+                          number < 0 
+                          ? setNumber(0)
+                          : number
+                        }
+                        
+                      </span>
                       <button className="plus" onClick={onIncrease}>+</button>
                     </div>
                     
@@ -102,7 +132,7 @@ export default function Detail(props) {
               <div className="totalPrice">
                 총 상품금액 :
                 <div className="price">
-                  68,000
+                  {result}
                 </div>
                 <span>원</span>
               </div>
