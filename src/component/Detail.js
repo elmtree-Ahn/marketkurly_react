@@ -127,10 +127,7 @@ export default function Detail(props) {
                       </span>
                       <button className="plus" onClick={onIncrease}>+</button>
                     </div>
-                    
 
-                  
-                  
                 </div>
               </div>
               <div className="totalPrice">
