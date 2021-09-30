@@ -15,26 +15,30 @@ export default function Detail(props) {
   }
 
   // 총 상품금액
+  // const price = props.data[id].price;
+  // let remove = ',';
+  // let priceArr = price.split('');
+  // priceArr = priceArr.filter((i) => {
+  //   return i !== remove;
+  // })
+
+  // let purePrice = parseInt(priceArr.join(''));
+  // let totalPrice = purePrice * number;
+  // totalPrice = String(totalPrice);
+  // let before = totalPrice.slice(0,-3);
+  // let after = totalPrice.slice(-3)
+  // let result = '';
+  // if (totalPrice > 1000) {
+  //   result = before + ',' + after;
+  // }
+  // else {
+  //   result = after;
+  // }
+
+    // 총 상품금액
   const price = props.data[id].price;
-  let remove = ',';
-  let priceArr = price.split('');
-  priceArr = priceArr.filter((i) => {
-    return i !== remove;
-  })
 
-  let purePrice = parseInt(priceArr.join(''));
-  let totalPrice = purePrice * number;
-  totalPrice = String(totalPrice);
-  let before = totalPrice.slice(0,-3);
-  let after = totalPrice.slice(-3)
-  let result = '';
-  if (totalPrice > 1000) {
-    result = before + ',' + after;
-  }
-  else {
-    result = after;
-  }
-
+  const result = (+price.replace(/,/g, '') * number).toLocaleString('en-US');
 
 
   return (
