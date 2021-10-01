@@ -14,12 +14,12 @@ import CategoryType from './component/main/CategoryType';
 import MainRecipe from './component/MainRecipe';
 import InstaRegram from './component/InstaRegram';
 import HeaderMenu from './component/main/HeaderMenu';
-import NewGoods from './component/NewGoods';
-import BestGoods from './component/BestGoods';
+
 import Event from './component/event/Event';
 import Login from './component/login/Login';
 import Detail from './component/detail/Detail';
 import GoodsData from "./data/GoodsData";
+import GoodsPage from './component/GoodsPage';
 
 
 function App() {
@@ -57,11 +57,11 @@ function App() {
 
       {/* 신상품 */}
       <Route path="/new_goods">
-        <NewGoods />
+        <GoodsPage title="신상품" />
       </Route>
       {/* 베스트 */}
       <Route path="/best_goods">
-        <BestGoods />
+        <GoodsPage title="베스트" />
       </Route>
       {/* 특가/혜택 */}
       <Route path="/event">

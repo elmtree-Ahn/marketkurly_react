@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import Detail from './detail/Detail';
 
-export default function NewGoods() {
+export default function GoodsPage(props) {
 
 
   let { adress } = useParams();
@@ -212,7 +212,7 @@ export default function NewGoods() {
               ?(      
               <>
                 <div className="title">
-                  <span>신상품</span>
+                  <span>{props.title}</span>
                 </div>
                 <div className="list_ability">
                   <div className="count">
