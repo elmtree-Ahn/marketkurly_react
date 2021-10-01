@@ -1,10 +1,10 @@
 import NewGoodsData from "../data/newGoodsData";
 import { useState } from 'react'
-import BasicItem from './BasicItem';
+import BasicItem from './items/BasicItem';
 import { Route } from 'react-router';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import Detail from './Detail';
+import Detail from './detail/Detail';
 
 export default function NewGoods() {
 

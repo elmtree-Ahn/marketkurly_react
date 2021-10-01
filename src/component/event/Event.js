@@ -1,5 +1,5 @@
-import EventBnr from './EventBnr';
-import eventBnrData from '../data/eventBnrData';
+import EventBnr from '../items/EventBnr';
+import eventBnrData from '../../data/eventBnrData';
 import { useState } from 'react';
 
 export default function Event(props){

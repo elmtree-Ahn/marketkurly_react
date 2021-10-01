@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import RecipiItem from './RecipiItem';
+import RecipiItem from './items/RecipiItem';
 
 export default function MainRecipe(props) {
   const settings = {

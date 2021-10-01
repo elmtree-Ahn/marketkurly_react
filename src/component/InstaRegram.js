@@ -3,8 +3,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import RecipiItem from './RecipiItem';
-import InstaItem from './InstaItem';
+import RecipiItem from './items/RecipiItem';
+import InstaItem from './items/InstaItem';
 
 export default function InstaRegram(props) {
   const settings = {

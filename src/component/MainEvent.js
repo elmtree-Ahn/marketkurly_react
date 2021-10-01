@@ -1,4 +1,4 @@
-import EvnetItem from './EventItem';
+import EvnetItem from './items/EventItem';
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

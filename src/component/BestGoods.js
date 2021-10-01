@@ -1,6 +1,6 @@
 import bestGoodsData from '../data/bestGoodsData';
 import { useState } from 'react'
-import BasicItem from './BasicItem';
+import BasicItem from './items/BasicItem';
 
 export default function BestGoods() {
 

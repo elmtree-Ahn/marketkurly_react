@@ -1,5 +1,5 @@
-import BasicItem from './BasicItem';
-import SpecialItem from './SpecialItem';
+import BasicItem from './items/BasicItem';
+import SpecialItem from './items/SpecialItem';
 import React from "react";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
