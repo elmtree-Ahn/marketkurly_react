@@ -34,9 +34,11 @@ export default function Header() {
             </a>
             <ul className="list_menu makeCenter">
               <li className="menu">
-                <a href="javascript:void(0)" className="link_menu join">
-                  회원가입
-                </a>
+                <Link to="/signup">
+                  <a href="javascript:void(0)" className="link_menu join">
+                    회원가입
+                  </a>
+                </Link>
               </li>
               <li className="menu">
                 <Link to="/login">

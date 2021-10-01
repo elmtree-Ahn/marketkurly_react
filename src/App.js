@@ -20,6 +20,7 @@ import Login from './component/login/Login';
 import Detail from './component/detail/Detail';
 import GoodsData from "./data/GoodsData";
 import GoodsPage from './component/GoodsPage';
+import SignUp from './component/signup/Signup';
 
 
 function App() {
@@ -71,9 +72,14 @@ function App() {
       <Route path="/login">
         <Login />
       </Route>
+      {/* 상세페이지 */}
       <Route path="/detail/:id">
         <Detail data={data}/>
       </Route>
+      <Route path="/signup">
+        <SignUp />
+      </Route>
+
       {/* 푸터 */}
       <Footer />
     </>

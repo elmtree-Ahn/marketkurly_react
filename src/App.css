@@ -255,16 +255,16 @@ header {
 
 /* MainSlide */
 .mainSlide {
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
+  /* overflow: hidden; */
 }
 .mainSlide .slideList {
-  width: 100vw;
+  width: 100%;
 }
 
 .mainSlide .slideList .slide {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 370px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1734,4 +1734,15 @@ footer .link .link_box .txt {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+/* signUp */
+.signUp .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 35px;
+  font-size: 28px;
+  font-weight: 500;
 }
