@@ -19,11 +19,11 @@ import BestGoods from './component/BestGoods';
 import Event from './component/event/Event';
 import Login from './component/login/Login';
 import Detail from './component/detail/Detail';
-import NewGoodsData from "./data/newGoodsData";
+import GoodsData from "./data/GoodsData";
 
 
 function App() {
-  let [data, setData] =  useState(NewGoodsData);
+  let [data, setData] =  useState(GoodsData);
 
   return (
     <>

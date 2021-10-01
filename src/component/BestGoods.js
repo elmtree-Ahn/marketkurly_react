@@ -1,10 +1,10 @@
-import bestGoodsData from '../data/bestGoodsData';
+import GoodsData from '../data/GoodsData';
 import { useState } from 'react'
 import BasicItem from './items/BasicItem';
 
 export default function BestGoods() {
 
-  let [data, setData] =  useState(bestGoodsData)
+  let [data, setData] =  useState(GoodsData)
   function changeColor() {
     console.log('실행됨');
   }
