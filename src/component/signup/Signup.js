@@ -15,10 +15,10 @@ export default function SignUp() {
                 필수입력사항
               </div>
               <div className="line"></div>
-              <div className="signUpInputList">
+              <form className="signUpInputList">
                 {/* 아이디 */}
                 <div className="signUpItems">
-                  <div className="title">
+                  <div className="itmeTitle">
                     아이디
                     <span className="redStar">*</span>
                   </div>
@@ -26,11 +26,14 @@ export default function SignUp() {
                     <input type="text" />
                     <span>6자 이상의 영문 혹은 영문과 숫자를 조합</span>
                   </div>
-                
-                <input type="text" />
+                  <button className="chkBtn">
+                    중복확인
+                  </button>
+
+
 
               </div>
-              </div>
+              </form>
 
               
             </div>
