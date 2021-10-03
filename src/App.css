@@ -1742,7 +1742,33 @@ footer .link .link_box .txt {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 45px 0 35px;
+  padding: 45px 0 55px;
   font-size: 28px;
   font-weight: 500;
+}
+
+.content_inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.content_inner .pageSub {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+.redStar {
+  font-size: 12px;
+  padding: 0 2px;
+  color: var(--color-red-bright);
+}
+
+.content_inner .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-black-dark);
 }
