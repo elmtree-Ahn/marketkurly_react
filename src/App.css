@@ -1774,5 +1774,62 @@ footer .link .link_box .txt {
 }
 
 .signUpItems {
-  
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.signUpItems .itemTitle {
+  width: 159px;
+  padding: 10px 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signUpItems .inputBox {
+  width: 332px;
+  margin-right: 10px;
+}
+
+.signUpItems .inputBox input {
+  width: 332px;
+  height: 44px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+}
+
+.signUpItems .inputBox input::placeholder {
+  font-weight: 500;
+  color: #999;
+}
+
+.signUpItems .inputBox input:focus {
+  border-color: #333;
+}
+
+.signUpItems .inputBox .coment {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.signUpItems .inputBox .coment .txt::before {
+  content: "\2022";
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 3px;
+}
+
+.signUpItems .chkBtn {
+  width: 120px;
+  height: 44px;
+  border: 1px solid var(--color-purple-dark);
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-purple-dark);
 }
