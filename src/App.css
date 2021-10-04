@@ -1823,6 +1823,28 @@ footer .link .link_box .txt {
   padding-right: 3px;
 }
 
+.signUpItems .inputBox .coment .bad {
+  color: #b3130b;
+}
+
+.signUpItems .inputBox .coment .bad::before {
+  content: "\2715";
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 3px;
+}
+
+.signUpItems .inputBox .coment .good {
+  color: #0f851a;
+}
+
+.signUpItems .inputBox .coment .good::before {
+  content: "\2713";
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 3px;
+}
+
 .signUpItems .chkBtn {
   width: 120px;
   height: 44px;
