@@ -2,10 +2,14 @@ import { useEffect } from 'react'
 import { useState } from 'react/cjs/react.development';
 
 export default function SignUp() {
+  // 코멘트 보여줄까 말까
   const [coment, setComent] = useState(false);
+  // 조건에 따라 값 바꾸기
   const [condition, setCondition] = useState('txt');
+  // 입력 값 스테이트
   const [data, setData] = useState('');
 
+  // 벨리데이션
   useEffect(() => {
     if (data.length > 0 && data.length < 6 ){
       setCondition('bad')
@@ -14,12 +18,13 @@ export default function SignUp() {
       setCondition('good')
     }
     
-  })
+  }, [data])
 
-
+  // 입력 값 변수로 받기
   const inputData = (e) => {
     setData(e.target.value);
   }
+
   return (
     <>
       <div className="signUp" >
