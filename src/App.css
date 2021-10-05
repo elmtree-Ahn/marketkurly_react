@@ -1773,6 +1773,10 @@ footer .link .link_box .txt {
   background-color: var(--color-black-dark);
 }
 
+.signUpInputList {
+  margin-bottom: 100px;
+}
+
 .signUpItems {
   display: flex;
   align-items: flex-start;

@@ -256,7 +256,7 @@ export default function GoodsPage(props) {
                     data.map((a, i) => {
                       return (
                         <>
-                          <BasicItem url={data[i].url} title={data[i].title} sale={data[i].sale} price={data[i].price} marketPrice={data[i].marketPrice} coment={data[i].coment} kurlyOnly={data[i].kurlyOnly} adress={data[i].id} key={data[i].id} />
+                          <BasicItem url={a.url} title={data[i].title} sale={data[i].sale} price={data[i].price} marketPrice={data[i].marketPrice} coment={data[i].coment} kurlyOnly={data[i].kurlyOnly} adress={data[i].id} key={data[i].id} />
                         </>
                         )
                       })

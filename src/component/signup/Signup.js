@@ -7,22 +7,22 @@ export default function SignUp() {
   // 조건에 따라 값 바꾸기
   const [condition, setCondition] = useState('txt');
   // 입력 값 스테이트
-  const [data, setData] = useState('');
+  const [id, setid] = useState('');
 
   // 벨리데이션
   useEffect(() => {
-    if (data.length > 0 && data.length < 6 ){
+    if (id.length > 0 && id.length < 6 ){
       setCondition('bad')
     }
-    else if (data.length >= 6) {
+    else if (id.length >= 6) {
       setCondition('good')
     }
     
-  }, [data])
+  }, [id])
 
   // 입력 값 변수로 받기
   const inputData = (e) => {
-    setData(e.target.value);
+    setid(e.target.value);
   }
 
   return (
@@ -66,16 +66,12 @@ export default function SignUp() {
                       )
                       : null
                     }
-
                   </div>
                   {/* 버튼 */}
                   <button className="chkBtn">
                     중복확인
                   </button>
-
-
-
-              </div>
+                </div>
               </form>
 
               
