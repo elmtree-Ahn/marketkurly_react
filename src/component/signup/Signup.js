@@ -210,7 +210,7 @@ export default function SignUp() {
                 <div className="signUpItems">
                   {/* 제목 */}
                   <Namestyle>
-                    비밀번호
+                    휴대폰
                     <span className="redStar">*</span>
                   </Namestyle>
                   {/* 인풋박스 */}
@@ -220,6 +220,87 @@ export default function SignUp() {
                   <button className={buttonCondition}>
                     인증번호 받기
                   </button>
+                </div>
+                {/* 주소 */}
+                <div className="signUpItems">
+                  {/* 제목 */}
+                  <Namestyle>
+                    주소
+                    <span className="redStar">*</span>
+                  </Namestyle>
+                  {/* 인풋박스 */}
+                  <div className="inputBox">
+                    <a className="findAdress"> 
+                      <img src="	https://res.kurly.com/pc/service/common/2006/ico_search.svg" alt="" />
+                      주소검색
+                    </a>
+                    <span className="adressInfo">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                  </div>
+                </div>
+                {/* 성별 */}
+                <div className="signUpItems">
+                  {/* 제목 */}
+                  <Namestyle>
+                    성별
+                  </Namestyle>
+                  {/* 인풋박스 */}
+                  <div className="inputBox_sex">
+                    <label for="sex1" className="sexlabel male">
+                      <input type="radio" name="gender" value="male" id="sex1" checked /> 
+                      <label for="sex1"><span></span>남자</label>
+                    </label>
+                    <label for="sex2" className="sexlabel female">
+                      <input type="radio" name="gender" value="female" id="sex2" /> 
+                      <label for="sex2"><span></span>여자</label>
+                    </label>
+                    <label for="sex3" className="sexlabel noChoice">
+                      <input type="radio" name="gender" value="noChoice" id="sex3" /> 
+                      <label for="sex3"><span></span>선택안함</label>
+                    </label>
+                  </div>
+                </div>
+                {/* 생년월일 */}
+                <div className="signUpItems">
+                  {/* 제목 */}
+                  <Namestyle>
+                    성별
+                  </Namestyle>
+                  {/* 인풋박스 */}
+                  <div className="inputBox input_birth">
+                    <input type="text" className="birth" placeholder="YYYY"/>
+                    /
+                    <input type="text" className="birth" placeholder="MM"/>
+                    /
+                    <input type="text" className="birth" placeholder="DD"/>
+                  </div>
+                </div>
+                {/* 성별 */}
+                <div className="signUpItems">
+                  {/* 제목 */}
+                  <Namestyle>
+                    추가입력 사항
+                  </Namestyle>
+                  {/* 인풋박스 */}
+                  <div className="inputBox_sex">
+                    <label for="event1" className="sexlabel male">
+                      <input type="radio" name="event" value="recomend" id="event1" checked /> 
+                      <label for="event1"><span></span>추천인 아이디</label>
+                    </label>
+                    <label for="event2" className="sexlabel female">
+                      <input type="radio" name="event" value="join" id="event2" /> 
+                      <label for="event2"><span></span>참여 이벤트명</label>
+                    </label>
+                  </div>
+                </div>
+                {/* line */}
+                <div className="line"></div>
+                {/* 이용양관동의 */}
+                <div className="signUpItems">
+                  {/* 제목 */}
+                  <Namestyle>
+                    이용약관동의
+                    <span className="redStar">*</span>
+                  </Namestyle>
                 </div>
               </form>
 
@@ -236,7 +317,7 @@ const Namestyle = styled.div`
   width: 159px;
   padding: 10px 0 0 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 `;
 
 const InputBox = styled.input`

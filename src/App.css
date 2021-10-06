@@ -1870,3 +1870,99 @@ footer .link .link_box .txt {
   font-weight: 600;
   color: #ddd;
 }
+
+.signUpItems .findAdress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 44px;
+  border: 1px solid var(--color-purple-dark);
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-purple-dark);
+  cursor: pointer;
+}
+
+.signUpItems .adressInfo {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.signUpItems .inputBox_sex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 332px;
+  height: 44px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.signUpItems .inputBox_sex input {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+.signUpItems .inputBox_sex label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4c4c4c;
+  margin-left: 5px;
+}
+
+.signUpItems .sexlabel {
+  display: block;
+  font-size: 20px;
+}
+
+.signUpItems .sexlabel input[type="radio"] {
+  display: none;
+}
+
+.signUpItems .sexlabel input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  border: 1px solid #cfcccc;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.signUpItems .sexlabel input[type="radio"]:checked + label span {
+  border: 5px solid #5f0081;
+  background-color: white;
+}
+
+.signUpItems .inputBox .birth {
+  width: 84px;
+  height: 40px;
+  border: none;
+  text-align: center;
+}
+
+.signUpItems .inputBox .birth:focus {
+  border: none;
+}
+
+.signUpItems .input_birth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.signUp .line {
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  background-color: var(--color-black-dark);
+}
