@@ -1859,3 +1859,14 @@ footer .link .link_box .txt {
   font-weight: 600;
   color: var(--color-purple-dark);
 }
+
+.signUpItems .noneWork {
+  width: 120px;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ddd;
+}
