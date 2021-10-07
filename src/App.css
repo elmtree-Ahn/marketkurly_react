@@ -1966,3 +1966,13 @@ footer .link .link_box .txt {
   margin-top: 20px;
   background-color: var(--color-black-dark);
 }
+
+@media screen and (max-width: 500px) {
+  .inner {
+    width: 500px;
+  }
+
+  .bnr_header {
+    display: none;
+  }
+}
