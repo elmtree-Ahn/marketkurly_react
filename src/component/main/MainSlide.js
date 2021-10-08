@@ -23,7 +23,7 @@ export default function MainSlide() {
       <div className="mainSlide">
         <Slider {...settings}>
           <div className="slideList">
-            <a className="slide" style={{ backgroundImage: "url(https://img-cf.kurly.com/shop/data/main/1/pc_img_1631155677.jpg)" }}></a>
+            <a className="slide" style={{ backgroundImage: "url(	https://img-cf.kurly.com/shop/data/main/1/pc_img_1633506913.jpg)" }}></a>
           </div>
           <div className="slideList">
             <a className="slide" style={{ backgroundImage: "url(https://img-cf.kurly.com/shop/data/main/1/pc_img_1621561009.jpg)" }}></a>
