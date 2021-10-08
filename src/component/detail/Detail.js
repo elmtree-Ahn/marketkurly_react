@@ -150,9 +150,8 @@ export default function Detail(props) {
                 <button className="inputCart">장바구니 담기</button>
               </div>
             </div>
-            
-            
           </div>
+          <div className="btns"></div>
         </div>
       </div>
     </>
